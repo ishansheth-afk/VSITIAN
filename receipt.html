@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Company | Receipt</title>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="flights.html">FLIGHTS</a></li>
+                <li><a href="bookings.html">BOOKINGS</a></li>
+                <li><a href="receipt.html">RECEIPT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+        <h1 class="nav-name nav-name-md">ASTRID</h1>
+        <h4 class="nav-name nav-name-small">Receipt  </h4>
+    </header>
+    <div class="receipt-display">
+        <h3>WELCOME <h5><span id="r-name" class="uppercase">name</span>  <span id="r-surname" class="uppercase"></span></h5></h3><br>
+        <label>Email :</label>  <span id="r-email"></span><br>
+        <label>Date :</label><span id="r-date"></span><br>
+        <label>Time :</label> <span id="r-time"></span><br>
+        <label>Shuttle :</label> <span id="r-shuttle"></span>
+    </div>
+    <script>
+        document.getElementById("r-name").innerHTML = localStorage.getItem("nameValue");
+        document.getElementById("r-surname").innerHTML = localStorage.getItem("surnameValue");
+        document.getElementById("r-email").innerHTML = localStorage.getItem("emailValue");  
+        document.getElementById("r-date").innerHTML = localStorage.getItem("dateValue");  
+        document.getElementById("r-time").innerHTML = localStorage.getItem("timeValue");    
+        document.getElementById("r-shuttle").innerHTML = localStorage.getItem("shuttleValue");     
+    </script>
+</body>
+</html>

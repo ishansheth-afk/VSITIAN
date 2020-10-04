@@ -1,0 +1,251 @@
+/* ============= common =========== */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Piazzolla', serif;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3)
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3)
+}
+
+
+.main-booking-nav{
+    text-align: center;
+    font-weight: 300;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+
+.main-header {
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url("Images/navhead.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+}
+
+.nav-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+}
+
+.nav-name-large {
+    font-size: 6em;
+}
+
+.nav-name-small{
+    font-size: 2em;
+}
+
+.nav-name-md{
+    font-size: 4em;
+}
+/* ============= home =========== */
+.home-body{
+    background-image: url(/images/HomeBackground.jpg);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-position: center;
+    background-size: cover;
+    height: 1000px;
+    color: white;
+    text-align: center;
+}
+
+.home-body p{
+    font-size: 1.8em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 5px;
+
+}
+
+.home-body .welcome {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin: 7px;
+}
+
+.home-body .astrid{
+    font-size: 2.6em;
+    font-weight: 600;
+    letter-spacing: 10px;
+    margin: 7px;
+}
+
+.home-body pre{
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 5px;
+}
+/* ============= booking =========== */
+
+.booking-form{
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    background-image: url(/images/Background.jpg);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-position: center;
+    background-size: cover;
+    height: 1000px;
+    
+}
+
+
+
+.booking-form input{
+    padding: 5px;
+    margin: 10px;
+    background-color: deepskyblue;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+.booking-form select{
+    padding: 5px;
+    margin: 10px;
+}
+
+.booking-form button{
+    color:whitesmoke ;
+    font-size: small;
+    font-weight: 700;
+    background-color: rgba(130,140,255,0.8);
+    border-radius: 10px;
+    font-size: 2em;
+    padding: 2px;
+    margin: 10px;
+    transition: 0.4s ease-in-out;
+
+}
+
+.booking-form select{
+    padding: 5px;
+    margin: 10px;
+    background-color: deepskyblue;
+    border-radius: 10px;
+    color:whitesmoke;
+
+}
+
+.booking-form button:hover{
+    color: whitesmoke;
+    background-color: deepskyblue;
+}
+
+.booking-form label{
+    font-size: 1.3em;
+    letter-spacing: 1.3px;
+    color: darkturquoise;
+
+}
+
+
+.booking-form h4{
+    font-size: 2em;
+    font-weight: 500;
+    color: darkturquoise;
+
+}
+
+/* ============= receipt =========== */
+
+.receipt-display{
+    
+    color: white;
+    justify-content: center;
+    background-image: url(/images/Background.jpg);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-position: center;
+    background-size: cover;
+    height: 1000px;
+    text-align: center;
+    
+}
+
+.receipt-display h3{
+    font-size: 2em;
+    font-weight: 900;
+    padding: 5px;
+    letter-spacing: 80px;
+    color: whitesmoke;
+}
+
+.receipt-display h5{
+    font-size: 1.7em;
+    font-weight: 600;
+    padding: 5px;
+    letter-spacing: 1px;
+    color: skyblue;
+}
+
+.receipt-display label{
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 5px;
+    letter-spacing: 3px;
+    color: whitesmoke;
+}
+
+.receipt-display span{
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 5px;
+    letter-spacing: 1px;
+    color: #6ca7f0;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+/* ============= about =========== */
+
+.about-section{
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.about-section p{
+    color:burlywood;
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}

@@ -1,0 +1,145 @@
+.flights-info{
+
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #131313;
+    padding: 10px; 
+    bottom: 0;
+    
+    
+}
+
+.container{
+    position: relative;
+    margin: 20px;
+    bottom: 170px
+}
+
+.container .card{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container .card:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #34DF43;
+    clip-path: circle(150px at 90% 10%);
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover:before{
+    clip-path: circle(250px at 90% -10%);
+
+}
+
+.container .card:after{
+    content: 'Personal';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255,255,255,0.04);
+
+    
+}
+
+
+
+.imgBx img{
+    height: 250px;
+    width: 130px;
+    margin-left: 50px;
+    margin-top: 50px;
+    position: absolute;
+    top: -15%;
+}
+
+.container .card:hover .imgBx{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 420px;
+    transition: 0.5s;
+}
+.container .card .imgBx{
+    top: 0%;
+    transform: translateY(15%);
+}
+
+.container .card .contentBx{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.container .card:hover .contentBx{
+    height: 170px;
+}
+.contentBx .contents-h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}   
+
+.contents-a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    color: #111;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+
+.container .card:hover .contentBx .contents-a{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.1s ;
+}
+
+.flight-addons{
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #131313;
+    padding: 10px;
+}
+
+.flight-addons .add-ons p{
+    color: whitesmoke;
+}
+
+.hr{
+    color: wheat;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    text-align: center;
+}

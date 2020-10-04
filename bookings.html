@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Company | Booking</title>
+<link rel="stylesheet" href="style1.css">
+<script>
+    function passValue(){
+        let firstname = document.getElementById("name").value;
+        let surname = document.getElementById("surname").value;
+        let email = document.getElementById("email").value;
+        let date = document.getElementById("date").value;
+        let time = document.getElementById("time").value;
+        let shuttle = document.getElementById("shuttles").value;
+        
+      
+        localStorage.setItem("nameValue",firstname);
+        localStorage.setItem("surnameValue",surname);
+        localStorage.setItem("emailValue",email);
+        localStorage.setItem("dateValue",date)
+        localStorage.setItem("timeValue",time);
+        localStorage.setItem("shuttleValue",shuttle)
+        return false;
+    }
+
+    
+
+</script>
+<script src="main.js"></script>
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="flights.html">FLIGHTS</a></li>
+                <li><a href="bookings.html">BOOKINGS</a></li>
+                <li><a href="receipt.html">RECEIPT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+        <h1 class="nav-name nav-name-md">ASTRID</h1>
+        <h4 class="nav-name nav-name-small">Bookings</h4>
+    </header>
+    <section class="section-form">
+    <div class="booking-form">
+        <form action="receipt.html">
+            <input type="text" id="name" placeholder="Name" name="name" required>
+            <input type="text" id="surname" placeholder="urname" name="surname" required><br>
+            <input type="email" id="email" placeholder="email" name = "email" required> <br>
+            <input type="date" id="date" placeholder="date" name="date" required><br>
+            <input type="time" id="time" placeholder="time" name="time" required><br>
+            <label for="cars">Choose a flight:</label>
+            <select name="shuttles" id="shuttles">
+                <option value="Personal">PERSONAL</option>
+                <option value="Prime">PRIME</option>
+                <option value="Civilization">CIVILIZATION</option>
+            </select><br>
+
+            <hr>
+
+            <h4>Select Your Add-Ons now : </h4>
+
+            
+
+            <button type="submit" onclick="passValue()">Pay and Take Receipt</button>
+            
+        </form>
+
+    </div>
+</section>
+
+</body>
+</html>
